@@ -1,0 +1,241 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+.header{
+	display: flex;
+	justify-content: flex-end;
+	background: #f6f6f6;
+	padding: 5px 10px;
+}
+.header li{
+	padding-right: 10px;
+}
+.header li img{
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.header li a{
+	display: flex;
+	text-decoration: none;
+}
+.header  a:hover,.logo  a:hover{
+	text-decoration: underline;
+}
+.facebook{
+	border-right: 2px solid #D0D0D0;
+}
+.facebook a{
+	color: #7c7cad;
+}
+.twitter a{
+	color: #56b1d9;
+}
+.logo{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+.logo h1 a{
+	width: 224px;
+	height: 50px;
+	background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png
+	);
+	display: block;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.logo ul{
+	display: flex;
+	padding-top: 10px;
+}
+.logo li{
+	padding-right: 20px;
+	padding-left: 10px;
+}
+.logo  a{
+	text-align: center;
+	color: #3acea2;
+	text-decoration: none;
+}
+.banner{
+	background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png
+	);
+	height: 346px;
+	display: flex;
+	align-items: center;
+}
+.banner h2{
+	width: 100%;
+	font-size: 36px;
+	line-height: 1.5;
+	font-weight: bold;
+	padding: 30px 20px;
+	color: white;
+	background: rgba(0, 0, 0,0.5)
+}
+.course{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+.item{
+	box-shadow: 1px 2px 2px 2px rgba(0,0,0,0.2);
+	width: 350px;
+}
+.itemimg{
+  display: block; 
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
+  margin: 20px auto;
+}
+.item h2{
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+	padding: 20px;
+}
+.item p{
+	padding: 0px 10px;
+	line-height: 25px;
+}
+.item ul {
+	list-style: disc;
+	padding: 5px 0px 20px 30px;
+}
+.item li{
+	line-height: 20px;
+}
+.content{
+	margin: 60px auto;
+  }
+  .content h2{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+  }
+  .table{
+	  margin: 0 auto;
+  }
+  .table th,.table td{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 8px 150px 8px 10px; 
+	text-align: left;
+  }
+  .table th{
+	background: #E0E0E0;
+	font-weight: bold;
+  }
+  .table span{
+	color: #65c1a3;
+  }
+.background{
+	margin: 0 auto;
+	background: -webkit-linear-gradient(#00664b,#009970);
+	color: white;
+}
+.background h2{
+	font-size: 30px;
+	text-align: center;
+	line-height: 40px;
+}
+.form{
+	padding:20px 10px 40px 10px;
+	display: flex;
+	justify-content: space-around;
+}
+textarea{
+	border-radius: 5px;
+	width: 40%;
+}
+.info{
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+input{
+	border-radius: 3px;
+	border: none;
+	margin-top:15px;
+	margin-bottom: 15px;
+}
+.submit{
+	background: #00cc98;
+	color: white;
+	cursor: pointer;
+	width: 50px;
+	align-self: flex-end;
+}
+.footer{
+	margin: 30px 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.footer h3{
+	width: 171px;
+	height: 36px;
+	background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png
+	);
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.footer li{
+	line-height: 30px;
+}
+span{
+	color: red;
+}
