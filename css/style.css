@@ -1,0 +1,319 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+* , *::before, *::after{
+	box-sizing: border-box;
+}
+.wrap{
+max-width: 1024px;
+margin: 0 auto;
+}
+.header{
+	position: relative;	
+	z-index: 999;
+	background: #000;
+	display: flex;
+	justify-content: space-between;
+}
+.header h1 a{
+	display: block;
+	width: 182px;
+	height: 36px;
+	background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/logo.png
+	);
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 10px 15px ;
+}
+
+.header .menu{
+	display: flex;
+	padding: 10px;
+}
+.header .menu li{
+	width: 80%;
+}
+.header .menu li a,.header .menu ul li a{
+display: block;
+padding: 10px 30px;
+color: white;
+text-decoration: none;
+white-space:nowrap;
+text-align: center;
+}
+.header .menu ul li a{
+	padding-left: 10px;
+	
+}
+.header .menu li a:hover,.menu a.active{
+	background: #d0d0d0;
+	color: #000;
+	
+}
+.header .menu .cart li{
+	background: #d0d0d0;
+}
+/*下拉選單*/
+.header .menu>li>ul{
+	display: none;
+	position: absolute;
+}
+/*二階層選單*/
+.header .menu .cart>li>ul{
+	display: none;
+	
+}
+/*swiper*/
+.banner, .banner2, .banner3 {
+	width: 1024px;
+	height: 560px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.banner{
+	background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_index.png
+	);
+}
+.banner2{
+	background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_QA.png
+	);
+}
+.banner3{
+	background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_course.png
+	);
+}
+.banner h2,.banner2 h2,.banner3 h2{
+	font-size: 46px;
+	color: #3acea2;
+	margin-left: 30px;
+	line-height: 1.5;
+}
+.banner h2 span,.banner2 h2 span,.banner3 h2 span{
+ color: white;
+}
+.banner a,.banner2 a,.banner3 a{
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	width: 150px;
+	padding: 10px 0px;
+	display: block;
+	margin: 30px 0px 0px 40px;
+	background: #3acea2;
+    color: #fff;
+}
+.swiper a:hover{
+	background: blue;
+
+}
+/*swiper end*/
+.content h2{
+	color: #d0d0d0;
+	float: left;
+	margin: 20px 0px 10px 10px;
+}
+.content h2 span{
+	color: #3acea2;
+	font-size: 26px;
+	margin-right: 5px;
+}
+.content a{
+	display: block;
+	float: right;
+	text-decoration: none;
+	color: #3acea2;
+	margin: 20px 10px 10px 0px;
+	border: 1px solid #3acea2;
+	padding: 5px;
+	border-radius: 3px;
+}
+.clearfix{
+	clear: both;
+}
+.course{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+/*lightbox2*/
+.course a{
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+.lb-dataContainer{
+	display: none !important;
+  }
+  /*lightbox2*/
+.course li{
+	width: 32%;
+	padding: 30px 5px;
+	margin-right: 5px;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	box-shadow: 1px 2px 2px 2px rgb(0 0 0 / 20%);
+}
+.course li img{
+	width: 96px;
+	height: 142px;
+	margin: 0 auto;
+}
+.course li h2{
+	margin: 10px auto;
+	color: black;
+}
+.course li p{
+	color: #d0d0d0;
+	margin-left: 20px;
+}
+.table{
+	margin-bottom: 50px;
+}
+.table h2{
+	float: none;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+  }
+.table table{
+	width: 100%;
+}
+  .table th,.table td{
+	border-bottom: 1px solid #E0E0E0;
+	padding: 8px 0px; 
+	text-align: center;
+  }
+  .table th{
+	background: #E0E0E0;
+	font-weight: bold;
+  }
+  .table td span{
+	color: #3acea2;
+  }
+  .form{
+	  padding: 70px 10px;
+	  background: #E0E0E0;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+  }
+  .form h3{
+	  font-size: 26px;
+	  line-height: 2;
+	  letter-spacing: 2px;
+	  margin-left: 20px;
+  }
+  .info{
+	  width: 40%;
+	  display: flex;
+	  flex-direction: column;
+  }
+  .info input{
+	  padding: 10px;
+	  border: none;
+	  border-radius: 5px;
+	  margin: 5px;
+  }
+  .info .submit{
+	  padding: 10px 20px;
+	  color: white;
+	  background: #3acea2;
+	  cursor: pointer;
+	  align-self: flex-end;
+	  line-height: 10px;
+  }
+  .info .submit:hover{
+	  background: blue;
+  }
+.footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #323228;
+	padding: 20px;
+}
+.footerlogo{
+	margin-left: 20px;
+}
+.footerlogo h3{
+	text-align: right;
+	color: #d0d0d0;
+}
+.footer ul{
+	display: flex;
+	justify-content: space-between;
+}
+.footer ul li{
+	margin-right: 10px;
+}
+.footer-icon a:hover{
+	border-bottom:2px solid blue;
+}
+/*top button&font-awesome*/
+.top-button{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+.top-button a{
+	display: block;
+	font-size: 30px;
+	color: #000;
+	text-decoration: none;
+	text-align: center;
+}

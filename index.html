@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.hexschool.com/favicon.ico">
+    <meta name="description" content="這是我的jQuery最終作業">
+    <meta name="keywords" content="六角,jQuery最終作業,六角最終作業">
+    <meta property="og:title" content="jQuery最終作業">
+    <meta property="og:description" content="jQuery最終作業">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="FB上的網址">
+    <meta property="og:image" content="FB上的圖片">       
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h1>
+                <a href="#">hex school</a>
+            </h1>
+             <!--下拉選單-->
+            <ul class="menu">
+                <li><a href="#">首頁</a></li>
+                <li>
+                  <a  href="#">課程</a>
+                  <ul class="cart" >
+          <li>
+             <a href="#">1.網頁設計</a>
+             <ul >
+              <li> <a href="#">HTML CSS</a> </li>
+              <li><a href="#">jQuery</a></li>
+              <li> <a href="#">RWD</a> </li>
+            </ul> 
+            </li>
+          <li>
+            <a href="#">2.前端開發</a> 
+            <ul >
+              <li><a href="#">Bootstrap 5</a> </li>
+              <li><a href="#">Javascript</a></li>
+              <li> <a href="#">Git</a> </li>
+            </ul> 
+          </li>
+          <li>
+            <a href="#">3.直播課程</a>
+            <ul >
+              <li> <a href="#">大神來六角</a> </li>
+              <li><a href="#">網頁切版直播班</a></li>
+            </ul> 
+           </li>
+        </ul>
+                </li>
+                  <li>
+                  <a  href="#">問答</a>
+                  <ul class="cart">
+                    <li> <a href="#">1.課程問題</a> </li>
+                    <li><a href="#">2.付款問題</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </div>
+        <!--swiper-->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+        <div class="banner swiper-slide">
+            <h2>歡迎來到<span>六角學院</span>
+            <br>帶你一起攻略前端設計</h2>
+            <a href="#">馬上去註冊    →</a>
+        </div> 
+        <div class="banner2 swiper-slide">
+          <h2>歡迎來到<span>六角學院</span>
+          <br>帶你一起攻略前端設計</h2>
+          <a  href="#">馬上去註冊    →</a>
+      </div> 
+      <div class="banner3 swiper-slide">
+        <h2>歡迎來到<span>六角學院</span>
+        <br>帶你一起攻略前端設計</h2>
+        <a  href="#">馬上去註冊    →</a>
+      </div> 
+    </div>
+    <!-- pagination -->
+  <div class="swiper-pagination"></div>
+  </div>
+   <!--swiper end-->
+        <div class="content">
+            <h2><span>精選課程</span>幫助你拿到前端工程師的門票</h2>
+             <a href="#">更多課程</a> 
+             <div class="clearfix"></div>
+              <!--lightbox2-->
+             <ul class="course">
+                 <li>
+                     <a class="exampldate-image-link"   href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/html5.png" data-lightbox="images" data-title="HTML"><img class="example-image"  src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/html5.png
+                     " alt="html"></a>
+                     <h2>Html 5 基礎教學</h2>
+                     <p>主流前端網站設計教學，透過實際的範例，瞭解正確的網站開發流程。</p>
+                 </li>
+                 <li>
+                    <a class="exampldate-image-link"  href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/jQuery.png " data-lightbox="images" data-title="rwd"><img class="example-image"  src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/jQuery.png 
+                    " alt="rwd"></a>
+                    <h2>響應式網站設計</h2>
+                    <p>六角學院提供業界響應式網站開發方法，讓學生瞭解完善的行動版開發觀念。</p>
+                 </li>
+                 <li>
+                    <a class="exampldate-image-link"  href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/rwd.png " data-lightbox="images" data-title="jQuery"><img class="example-image"  src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/rwd.png 
+                    " alt="jQuery"></a>
+                    <h2>jQuery 實戰教學</h2>
+                    <p>分為四大主題：變數的使用、操作DOM、基本數學運算和套件使用。</p>
+                 </li>
+             </ul>
+             <!--lightbox2 end-->
+             <div class="table">
+                <h2><span>課程比較</span>線上與實體課程的差異</h2>
+                <table>
+                  <tr>
+                    <th>項目</th>
+                    <th>六角學院 線上課程</th>
+                    <th>一般線上課程</th>
+                    <th>一般實體課程</th>
+                  </tr>
+                  <tr>
+                    <td>費用</td>
+                    <td><span>較低</span></td>
+                    <td><span>較低</span></td>
+                    <td>較高</td>
+                  </tr>
+                  <tr>
+                    <td>學習效果</td>
+                    <td>一般</td>
+                    <td><span>較低</span></td>
+                    <td><span>很好</span></td>
+                  </tr>
+                  <tr>
+                    <td>Code review</td>
+                    <td><span>有</span></td>
+                    <td>無</td>
+                    <td>不一定</td>
+                  </tr>
+                  <tr>
+                    <td>課程更新速度</td>
+                    <td><span>普通</span></td>
+                    <td><span>普通</span></td>
+                    <td>較慢</td>
+                  </tr>
+                  <tr>
+                    <td>多次複習</td>
+                    <td><span>可</span></td>
+                    <td>可</td>
+                    <td>不可</td>
+                  </tr>
+                  <tr>
+                    <td>字幕</td>
+                    <td><span>有</span></td>
+                    <td>不一定</td>
+                    <td>板書</td>
+                  </tr>
+                </table>
+             </div>
+             <div class="form">
+                 <h3>你就是六角下一個學生！
+                     <br>快留下資料讓我們認識你吧
+                 </h3>
+                 <form class="info" action="index.html">
+                     <input type="text" placeholder="你的名字是？" name="Name">
+                     <input type="email" placeholder="example@mail.com.tw" name="mail">
+                     <input class="submit" type="submit" value="送出">
+                 </form>
+             </div>
+        </div>
+        <div class="footer">
+            <div class="footerlogo">
+            <h2><a href="#"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/logo.png" alt="hexschool logo"></a> </h2> 
+            <h3> © 2018 hexschool</h3> </div>
+                <ul class="footer-icon" >
+                    <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/fb.png
+                        " alt="fb圖片"></a></li>
+                    <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/ig.png
+                        " alt="ig圖片"></a></li>
+                    <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/tw.png
+                         " alt="twitter圖片"></a></li>
+                </ul>  
+            </div>
+            <!--top button-->
+            <div class="top-button">
+              <a href=".top"><br> top</a>
+
+            </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/lightbox-plus-jquery.js"></script>
+    <script src="js/all.js"></script>
+</body>
+</html>
